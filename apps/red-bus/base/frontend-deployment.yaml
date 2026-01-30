@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redbus-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redbus-frontend
+  template:
+    metadata:
+      labels:
+        app: redbus-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: soham22202/redbus-frontend:1.0.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
