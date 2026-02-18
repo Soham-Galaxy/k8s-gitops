@@ -9,6 +9,8 @@ spec:
       app: mongodb
   template:
     metadata:
+      annotations:
+        backup.velero.io/backup-volumes: mongo-data
       labels:
         app: mongodb
     spec:
