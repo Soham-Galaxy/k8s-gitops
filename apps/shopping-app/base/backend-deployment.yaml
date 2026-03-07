@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: soham22202/shopping-backend:ci-7
+          image: soham22202/shopping-backend:ci-8
           ports:
             - containerPort: 5000
           env:

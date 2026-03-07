@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: soham22202/shopping-frontend:ci-7
+          image: soham22202/shopping-frontend:ci-8
           imagePullPolicy: Always
           ports:
             - containerPort: 80
