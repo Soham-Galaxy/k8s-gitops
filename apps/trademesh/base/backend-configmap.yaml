@@ -28,7 +28,7 @@ data:
   # This is set correctly anyway so that preflights succeed if anything ever
   # reaches the API from a different origin, and so the value is never a
   # stale localhost left over from local development.
-  CORS_ALLOWED_ORIGINS: "http://trademesh.k8s.local"
+  CORS_ALLOWED_ORIGINS: http://trademesh.k8s.local:32576,http://localhost:3000
 
   # Not a secret -- it is a duration, not a credential. The signing key itself
   # (JWT_SECRET) is in the Secret.
