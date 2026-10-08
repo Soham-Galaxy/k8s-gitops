@@ -66,7 +66,7 @@ spec:
       containers:
         - name: backend
           # PLACEHOLDER -- replace <DOCKERHUB_USERNAME> before applying.
-          image: soham22202/trademesh-backend:v2
+          image: soham22202/trademesh-backend:ci-1
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
